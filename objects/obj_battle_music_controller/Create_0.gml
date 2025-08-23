@@ -1,0 +1,2 @@
+battle_music = mus_delicious_island_daytime_pre
+new_battle_music = mus_delicious_island_daytime_elite

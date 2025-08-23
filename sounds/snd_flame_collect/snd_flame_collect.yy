@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_flame_collect",
+  "audioGroupId":{
+    "name":"sound",
+    "path":"audiogroups/sound",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.1317914,
+  "name":"snd_flame_collect",
+  "parent":{
+    "name":"Sound Effect",
+    "path":"folders/声音/Sound Effect.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_flame_collect.wav",
+  "type":0,
+  "volume":1.0,
+}

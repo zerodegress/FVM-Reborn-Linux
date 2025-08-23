@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_place2",
+  "audioGroupId":{
+    "name":"sound",
+    "path":"audiogroups/sound",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.74303854,
+  "name":"snd_place2",
+  "parent":{
+    "name":"Sound Effect",
+    "path":"folders/声音/Sound Effect.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_place2.wav",
+  "type":0,
+  "volume":1.0,
+}

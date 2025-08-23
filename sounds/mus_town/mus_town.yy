@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mus_town",
+  "audioGroupId":{
+    "name":"music",
+    "path":"audiogroups/music",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":66.88801,
+  "name":"mus_town",
+  "parent":{
+    "name":"Battle BGM",
+    "path":"folders/声音/Battle BGM.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_town.wav",
+  "type":0,
+  "volume":1.0,
+}

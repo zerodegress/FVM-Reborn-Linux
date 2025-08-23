@@ -1,0 +1,20 @@
+/// @function load_custom_deck(deck_data)
+/// @desc 加载自定义卡组（未来从存档/菜单读取）
+/// @param {array} deck_data 卡牌ID数组
+function load_custom_deck(deck_data) {
+    // 清空当前卡组
+    ds_list_clear(global.selected_deck);
+    
+    // 添加新卡牌
+    for(var i = 0; i < array_length(deck_data); i++) {
+        add_to_deck(deck_data[i]);
+    }
+    
+    // 重新创建卡槽（需在战斗房间调用）
+    if (instance_exists(obj_battle)) {
+        // 先删除旧卡槽
+        with (obj_card_slot) instance_destroy();
+        // 创建新卡槽
+        create_battle_slots();
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_chomp3",
+  "audioGroupId":{
+    "name":"sound",
+    "path":"audiogroups/sound",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.97959185,
+  "name":"snd_chomp3",
+  "parent":{
+    "name":"Chomp",
+    "path":"folders/声音/Sound Effect/Chomp.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_chomp3.wav",
+  "type":0,
+  "volume":1.0,
+}
