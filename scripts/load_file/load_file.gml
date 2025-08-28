@@ -1,8 +1,9 @@
 /// @function load_file()
 /// @desc 加载存档文件到全局变量global.save_data中
 function load_file() {
+	var file_path = working_directory + "/saves/save.json"
     // 检查存档文件是否存在
-    if (!file_exists("save.json")) {
+    if (!file_exists(file_path)) {
         // 如果存档不存在，创建默认存档数据
         global.save_data = {
             "version": 1.0,
@@ -12,8 +13,8 @@ function load_file() {
                 "experience": 0
             },
             "unlocked_cards": [
-                {"id": "small_fire", "level": 1, "shape": 0},
-                {"id": "xiao_long_bao", "level": 1, "shape": 0}
+                {"id": "small_fire", "level": 1, "shape": 0,"skill":0},
+                {"id": "xiao_long_bao", "level": 1, "shape": 0,"skill":0}
             ],
             "completed_levels": [],
             "inventory": [],
@@ -33,7 +34,7 @@ function load_file() {
     }
     
     // 打开存档文件
-    var file = file_text_open_read("save.json");
+    var file = file_text_open_read(file_path);
     if (file == -1) {
         show_debug_message("无法打开存档文件!");
         return false;

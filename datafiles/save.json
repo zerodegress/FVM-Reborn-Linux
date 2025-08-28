@@ -6,8 +6,8 @@
         "experience": 0
     },
     "unlocked_cards": [
-        {"id": "small_fire", "level": 1,"shape":0},
-        {"id": "xiao_long_bao", "level": 1,"shape":0}
+        {"id": "small_fire", "level": 1,"shape":0,"skill":0},
+        {"id": "xiao_long_bao", "level": 1,"shape":0,"skill":0}
     ],
     "completed_levels": [
     ],

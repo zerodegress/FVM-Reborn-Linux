@@ -10,6 +10,8 @@ atk = 0
 range = 0
 attack_type = ATTACK_TYPE.PRODUCER
 plant_type = ""
+shape = 0
+skill = 0
 
 // ========== 生产相关 ==========
 state = CARD_STATE.IDLE

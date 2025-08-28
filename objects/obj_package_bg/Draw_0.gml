@@ -9,12 +9,15 @@ draw_self()
 draw_sprite_ext(spr_package_bg_2,0,530,room_height/2,1.8,1.8,0,c_white,1)
 
 // 绘制玩家金币数量
-draw_set_font(font_yuan); // 假设有一个字体font_main
+draw_set_font(font_song2); // 假设有一个字体font_main
+draw_set_color(c_yellow);
+draw_set_halign(fa_right);
+draw_set_valign(fa_bottom);
+draw_text(x - 180, y + 410, string(global.save_data.player.gold));
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
-draw_text(x - 350, y + 350, "金币: " + string(global.save_data.player.gold));
-
+draw_set_font(font_yuan)
 if package_button_select == 1 {
     for(var i = 0 ; i < package_rows ; i++){
         for(var j = 0 ; j < package_cols ; j++){
@@ -56,7 +59,10 @@ if package_button_select == 1 {
 				draw_set_halign(fa_center);
 				draw_set_valign(fa_bottom);
 				draw_text(card_x,card_y+45,card_data[? CARD_DATA.cost])
-                
+				var level = global.save_data.unlocked_cards[card_index].level
+				if level > 0{
+					draw_sprite_ext(spr_star_slot, level - 1, card_x-30, card_y-40,1.4,1.4,0,c_white,1);
+				}
                 // 检查鼠标是否悬停在卡片上
                 var spr_width = sprite_get_width(card_data[? CARD_DATA.spr]) * 1.8;
                 var spr_height = sprite_get_height(card_data[? CARD_DATA.spr]) * 1.8;
@@ -92,7 +98,7 @@ if package_button_select == 1 {
 		draw_set_valign(fa_top);
         draw_set_alpha(1);
         draw_set_color(c_white);
-        draw_text(tooltip_x, tooltip_y, "左键点击调节技能\n右键点击查看图鉴");
+        draw_text(tooltip_x, tooltip_y, "左键点击调节卡片\n右键点击查看情报");
     }
 }
 else if package_button_select == 2 {

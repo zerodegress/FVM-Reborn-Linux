@@ -6,6 +6,11 @@ var plant_data = get_plant_data(plant_id);
 if (plant_data != undefined) {
     name = plant_data[? "name"];
     description = plant_data[? "description"];
+	
+	var card_save_data = get_card_info(plant_id)
+	current_level = card_save_data.level
+	skill = card_save_data.skill
+	shape = card_save_data.shape
     
     // 应用基础属性
     var upgrade_data = get_plant_upgrade(plant_id, current_level);
@@ -23,6 +28,7 @@ if (plant_data != undefined) {
             flame_produce = upgrade_data[? "flame_produce"];
         }
     }
+	
 }
 
 if current_level >= 4{ //绑定星级贴图
